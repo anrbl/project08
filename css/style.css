@@ -1,0 +1,209 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #222;
+}
+
+.header .head_brequet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    height: 100px;
+}
+
+.header h1 {
+    width: 140px;
+}
+
+.header .head_customer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 50px;
+
+    font-size: 14px;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 30px;
+    color: #f9f9f9;
+}
+
+.header .user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #d1d2d3;
+}
+
+.header #hb_lan {
+    outline: none;
+    border: none;
+    background: none;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #d1d2d3;
+    padding: 14px 0 16px 0;
+}
+
+
+/* 메인 */
+
+.main_visual {
+    position: relative;
+}
+
+
+.main_visual .itm {
+    position: relative;
+    height: 700px;
+    background: #ddd;
+    filter: grayscale(0.4);
+}
+
+.main_visual .itm::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 40%);
+}
+
+.main_visual .itm01 {
+    background: url(../images/mainvisual01.avif) no-repeat center center/cover;
+}
+
+.main_visual .itm02 {
+    background: url(../images/mainvisual02.avif) no-repeat center center/cover;
+}
+
+.main_visual .itm03 {
+    background: url(../images/mainvisual03.avif) no-repeat center right/cover;
+}
+
+.main_visual .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.main_visual .slogan .desc {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 750px;
+    word-break: keep-all;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+}
+
+/* 
+ background: #fff;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.main_visual .slogan .desc::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: #052c65;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 66%, 0% 84%);
+    transform: scale(1.1);
+    z-index: -1;
+} */
+
+.main_visual .slogan .desc h3 {
+    font-family: 'Instrument Serif';
+    font-size: 60px;
+    line-height: 70px;
+    color: #f9f9f9;
+    margin: 0 0 18px 0;
+}
+
+.main_visual .slogan .desc p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+
+.main_visual .text_slide {
+    position: absolute;
+    top: calc(50% - 40px);
+    right: 0;
+    transform: translate(0, -50%);
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+
+
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.main_visual .text_slide .txt strong {
+    display: block;
+    text-align: right;
+    padding: 20px;
+    color: #666;
+    font-size: 12px;
+    border-radius: 10px 0 0 10px;
+    transition: 0.1s;
+}
+
+/* 
+.main_visual .text_slide .txt.on strong {
+    background: #fff;
+    color: #444;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    padding: 50px 0;
+    background: #222;
+    color: #d1d2d3;
+}
+
+.footer .ft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .foot_customer {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .foot_sns {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .foot_sns li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
