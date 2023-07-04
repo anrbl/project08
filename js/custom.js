@@ -20,4 +20,31 @@ $(function () {
         console.log(idx);
         $('.main_slide').slick('slickGoTo', idx, true);
     });
+
+    // section Collection
+    $('.collection_slide').slick({
+        arrows: false,
+        asNavFor: '.colist_slide',
+        fade: true,
+    });
+    $('.colist_slide').slick({
+        arrows: false,
+        asNavFor: '.collection_slide',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+    });
+    $('.main_collection .arrows .left').on('click', function () {
+        $('.collection_slide').slick('slickPrev');
+    })
+    $('.main_collection .arrows .right').on('click', function () {
+        $('.collection_slide').slick('slickNext');
+    })
+
+    //section Timepiece
+    $('.tp_piece li').on('click', function (e) {
+        e.preventDefault();
+        let idx = $(this).index();
+        $('.tp_piece li').eq(idx).addClass('on').siblings().removeClass('on');
+        $('.tp_desc li').eq(idx).addClass('on').siblings().removeClass('on');
+    });
 });
