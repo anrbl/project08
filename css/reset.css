@@ -136,7 +136,8 @@ img {
 }
 
 address,
-em {
+em,
+i {
     font-style: normal;
 }
 

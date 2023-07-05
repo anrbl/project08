@@ -10,6 +10,9 @@ body {
     word-break: keep-all;
 }
 
+img {
+    filter: grayscale(0.4);
+}
 
 .section {
     padding: 110px 0;
@@ -19,6 +22,11 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.line {
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .blind {
@@ -31,17 +39,16 @@ body {
 }
 
 
-.title {
+/* .title {
     max-width: 1200px;
     margin: 0 auto 38px auto;
     padding: 0 15px;
     text-align: left;
-}
+} */
 
 .title h2 {
     font-size: 40px;
     font-family: 'Instrument Serif';
-    margin: 0 0 8px 0;
     text-transform: uppercase;
 }
 
