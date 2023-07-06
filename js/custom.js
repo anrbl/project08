@@ -1,5 +1,11 @@
 $(function () {
-
+    $(window).scroll(function () {
+        let top = $(window).scrollTop();
+        top > 100 ? $('.to_top').fadeIn() : $('.to_top').fadeOut(0)
+    });
+    $('.to_top').on('click', function () {
+        $('html,body').animate({ scrollTop: 0 }, 600);
+    });
 
     $('.main_slide').on('init afterChange', function (e, s, c) {
         const current = $('.main_slide .slick-current');
@@ -22,11 +28,6 @@ $(function () {
         $('.main_slide').slick('slickNext');
 
     })
-    // $('.text_dots li').on('click', function () {
-    //     let idx = $(this).index();
-    //     console.log(idx);
-    //     $('.main_slide').slick('slickGoTo', idx, true);
-    // });
 
     // section Collection
     $('.collection_slide').slick({
