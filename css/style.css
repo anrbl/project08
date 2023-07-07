@@ -1233,7 +1233,7 @@ footer
     .mobile_menu {
         display: block;
         position: fixed;
-        top: 40px;
+        top: 30px;
         right: 30px;
         z-index: 1001;
         transition: 0.5s;
@@ -1243,7 +1243,7 @@ footer
         content: "\F479";
         font-family: bootstrap-icons;
         display: block;
-        padding: 8px;
+        padding: 10px;
         border-radius: 2px;
         background: var(--c2);
         color: var(--cl);
@@ -1271,7 +1271,7 @@ footer
 
     .main_visual .main_slide .itm {
         position: relative;
-        height: calc(100vh - 100px);
+        height: 500px;
 
         z-index: 900;
     }
@@ -1286,8 +1286,8 @@ footer
 
     .main_visual .itm::after {
         content: "";
-        width: calc(100% - 60px);
-        height: calc(100% - 60px);
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
 
     }
 
@@ -1322,8 +1322,8 @@ footer
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: calc(100% - 60px);
-        height: calc(100% - 60px);
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
         border-radius: 10px;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
     }
@@ -1331,10 +1331,10 @@ footer
     .main_visual .itm .slogan .desc {
         position: absolute;
         top: auto;
-        bottom: 55px;
+        bottom: 40px;
         right: 50%;
         transform: translate(50%, 0);
-        width: calc(100% - 110px);
+        width: calc(100% - 80px);
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -1487,14 +1487,13 @@ footer
 
     /* main_timepiece */
     .main_timepiece .line {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 60px;
+        display: block
     }
 
     .main_timepiece .title {
         position: relative;
         border-left: none;
+        margin: 0 0 60px 0;
     }
 
     .main_timepiece .title h2 {
@@ -1514,10 +1513,15 @@ footer
     }
 
     .main_timepiece .content {
-        display: grid;
+        display: block;
+        /* display: grid;
         grid-template-columns: 1fr;
-        align-items: flex-start;
-        gap: 60px;
+        align-items: flex-start; */
+    }
+
+    .main_timepiece .tp_left {
+        display: block;
+        margin: 0 0 30px 0;
     }
 
     .main_timepiece .tp_left figure {
