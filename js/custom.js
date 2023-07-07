@@ -56,6 +56,13 @@ $(function () {
         $('.tp_desc li').eq(idx).addClass('on').siblings().removeClass('on');
     });
 
+    $(function () {
+        $('.main_customer .itm').on('click', function (e) {
+            e.preventDefault();
+            $(this).addClass('on').siblings().removeClass('on');
+        });
+    });
+
 
     //mobile
     $('.mobile_menu').on('click', function () {
